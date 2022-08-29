@@ -22,7 +22,7 @@
 
 //============[ constants ]=================
 #define PPR17 131072.0  //2^17
-#define N_links 2 //as big as the number of slave MC connected + master (N_links=2 means that one slave is connected and so on)
+#define N_links 3 //as big as the number of slave MC connected + master (N_links=2 means that one slave is connected and so on)
 #define N_enc_joint  2 // number of encoders for each slave/master
 #define PRINT 0
 #define LED_PIN 13
@@ -58,7 +58,7 @@ int T;
 int count=0;
 
 float arr[N_links*N_enc_joint] = {0};
-uint8_t slave_add[N_links] = {00,100}; //
+uint8_t slave_add[N_links] = {00,100,101}; //
 float joint_offset[N_links*N_enc_joint] = {0}; //determined at test, each joint will have a different offset
 int test;
 union u_tag {
@@ -166,7 +166,7 @@ void publish_msg(){
 
 //--------=== request data function ===---------
 void Request_Event(){
-  int counter=0;
+  
   enc.get_pos2(); // manually takes self position from encoders
   arr[0] = enc.AllowAccess_Y(); //placing it at the begining of the array
   arr[1] = enc.AllowAccess_Z();
@@ -174,6 +174,7 @@ void Request_Event(){
   arr[1] -= joint_offset[1]; 
   //---------- getting data from slaves ----------
   for (int joint_i = 1; joint_i < N_links; joint_i++) {
+    int counter=0;
     test = Wire.requestFrom(slave_add[joint_i], sizeof(float)*N_enc_joint); //requesting data from all slave devices
     //delay(4);
     while(Wire.available()<8 && counter<3){
