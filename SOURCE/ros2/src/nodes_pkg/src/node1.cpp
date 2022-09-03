@@ -9,10 +9,10 @@ using std::placeholders::_1;
 // using std::placeholders::_3;
 
  
-class Node1 : public rclcpp::Node // MODIFY NAME
+class Node1 : public rclcpp::Node 
 {
 public:
-    Node1() : Node("node1") // MODIFY NAME
+    Node1() : Node("node1") 
     {
      RCLCPP_INFO(this->get_logger(), "Node1 has been started.");
      joint_val_subscriber_ = this->create_subscription<std_msgs::msg::Float32MultiArray>(
@@ -59,7 +59,7 @@ private:
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<Node1>(); // MODIFY NAME
+    auto node = std::make_shared<Node1>(); 
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
