@@ -5,6 +5,7 @@ from launch_ros.actions import Node
 import launch
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration, PythonExpression
+from datetime import datetime
 
 
 
@@ -17,14 +18,19 @@ def generate_launch_description():
         executable="node1"
  
     )
+# ////////////////////////////////////////////////////////////////////////
+    now = datetime.now()
+    dt_string = "../../bag_files/"+now.strftime("%d_%m_%Y %H:%M:%S")
 
+
+# //////////////////////////////////////////////////////////////////
 
     bag_ex =launch.actions.ExecuteProcess(
         condition=IfCondition(
             PythonExpression([
                 record])
         ),
-            cmd=['ros2', 'bag', 'record', '/joint_val_topic'],
+            cmd=['ros2', 'bag', 'record', '/joint_val_topic', '-o', dt_string],
             output='screen'
         )
     

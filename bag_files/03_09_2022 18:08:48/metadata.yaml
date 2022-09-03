@@ -7,13 +7,18 @@ rosbag2_bagfile_information:
     nanoseconds_since_epoch: 9223372036854775807
   message_count: 0
   topics_with_message_count:
-    []
+    - topic_metadata:
+        name: /joint_val_topic
+        type: std_msgs/msg/Float32MultiArray
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 0
   compression_format: ""
   compression_mode: ""
   relative_file_paths:
-    - rosbag2_2022_09_03-17_14_04_0.db3
+    - 03_09_2022 18:08:48_0.db3
   files:
-    - path: rosbag2_2022_09_03-17_14_04_0.db3
+    - path: 03_09_2022 18:08:48_0.db3
       starting_time:
         nanoseconds_since_epoch: 9223372036854775807
       duration:
