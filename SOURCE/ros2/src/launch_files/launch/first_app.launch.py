@@ -20,7 +20,7 @@ def generate_launch_description():
     )
 # ////////////////////////////////////////////////////////////////////////
     now = datetime.now()
-    dt_string = "../../bag_files/"+now.strftime("%d_%m_%Y %H:%M:%S")
+    dt_string = "bag_files/"+now.strftime("%d_%m_%Y %H:%M:%S")
 
 
 # //////////////////////////////////////////////////////////////////
