@@ -1,0 +1,22 @@
+[0.021s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/launch_files': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/launch_files -- -j3 -l3
+[0.061s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/launch_files' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/launch_files -- -j3 -l3
+[0.103s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/launch_files': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ben/SNAKE/SOURCE/ros2/build/launch_files
+[0.110s] -- Install configuration: ""
+[0.111s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files//launch
+[0.111s] -- Installing: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files//launch/first_app.launch.py
+[0.111s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/ament_index/resource_index/package_run_dependencies/launch_files
+[0.111s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/ament_index/resource_index/parent_prefix_path/launch_files
+[0.111s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/ament_prefix_path.sh
+[0.111s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/ament_prefix_path.dsv
+[0.111s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/path.sh
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/path.dsv
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.bash
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.sh
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.zsh
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.dsv
+[0.112s] -- Installing: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/package.dsv
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/ament_index/resource_index/packages/launch_files
+[0.112s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/cmake/launch_filesConfig.cmake
+[0.113s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/cmake/launch_filesConfig-version.cmake
+[0.113s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/package.xml
+[0.115s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/launch_files' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ben/SNAKE/SOURCE/ros2/build/launch_files
