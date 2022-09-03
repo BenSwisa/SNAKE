@@ -2,7 +2,7 @@
 
 using teensey 4.0 as MC
 
-code for master in micro_ros
+code for masters in micro_ros
 
 libraries needed :
 RLSencoder2,
