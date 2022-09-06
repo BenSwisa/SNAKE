@@ -1,0 +1,7 @@
+[0.049s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.315s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.436s] [ 50%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[2.527s] gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Interrupt
+[2.530s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node1.dir/all] Interrupt
+[2.536s] gmake: *** [Makefile:146: all] Interrupt
+[2.570s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
