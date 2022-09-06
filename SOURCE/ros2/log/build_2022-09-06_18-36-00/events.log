@@ -1,0 +1,171 @@
+[0.000000] (-) TimerEvent: {}
+[0.000274] (launch_files) JobQueued: {'identifier': 'launch_files', 'dependencies': OrderedDict()}
+[0.000716] (nodes_pkg) JobQueued: {'identifier': 'nodes_pkg', 'dependencies': OrderedDict()}
+[0.000776] (launch_files) JobStarted: {'identifier': 'launch_files'}
+[0.012661] (nodes_pkg) JobStarted: {'identifier': 'nodes_pkg'}
+[0.019711] (launch_files) JobProgress: {'identifier': 'launch_files', 'progress': 'cmake'}
+[0.021438] (launch_files) JobProgress: {'identifier': 'launch_files', 'progress': 'build'}
+[0.021534] (launch_files) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ben/SNAKE/SOURCE/ros2/build/launch_files', '--', '-j3', '-l3'], 'cwd': '/home/ben/SNAKE/SOURCE/ros2/build/launch_files', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'ben'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ben/ros2_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ben'), ('OLDPWD', '/home/ben/SNAKE/SOURCE/ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1899'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4855'), ('PICO_TOOLCHAIN_PATH', '...'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install:/home/ben/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ben'), ('JOURNAL_STREAM', '8:54413'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ben'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ben-virtual-machine:@/tmp/.ICE-unix/2067,unix/ben-virtual-machine:/tmp/.ICE-unix/2067'), ('INVOCATION_ID', '2c63aaa52f8647c6900414c9af278ea5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.48G1R1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2416eb4b-6b3c-485e-9768-fd1f4e8291bc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ben/SNAKE/SOURCE/ros2/build/launch_files'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ben/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ben/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.030532] (nodes_pkg) JobProgress: {'identifier': 'nodes_pkg', 'progress': 'cmake'}
+[0.031665] (nodes_pkg) JobProgress: {'identifier': 'nodes_pkg', 'progress': 'build'}
+[0.032421] (nodes_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg', '--', '-j3', '-l3'], 'cwd': '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'ben'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ben/ros2_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ben'), ('OLDPWD', '/home/ben/SNAKE/SOURCE/ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1899'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4855'), ('PICO_TOOLCHAIN_PATH', '...'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install:/home/ben/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ben'), ('JOURNAL_STREAM', '8:54413'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ben'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ben-virtual-machine:@/tmp/.ICE-unix/2067,unix/ben-virtual-machine:/tmp/.ICE-unix/2067'), ('INVOCATION_ID', '2c63aaa52f8647c6900414c9af278ea5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.48G1R1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2416eb4b-6b3c-485e-9768-fd1f4e8291bc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ben/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ben/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.080918] (launch_files) CommandEnded: {'returncode': 0}
+[0.098857] (-) TimerEvent: {}
+[0.103348] (nodes_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node1\x1b[0m\n'}
+[0.118879] (launch_files) JobProgress: {'identifier': 'launch_files', 'progress': 'install'}
+[0.129977] (nodes_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o\x1b[0m\n'}
+[0.133406] (launch_files) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ben/SNAKE/SOURCE/ros2/build/launch_files'], 'cwd': '/home/ben/SNAKE/SOURCE/ros2/build/launch_files', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'ben'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ben/ros2_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ben'), ('OLDPWD', '/home/ben/SNAKE/SOURCE/ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1899'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4855'), ('PICO_TOOLCHAIN_PATH', '...'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install:/home/ben/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ben'), ('JOURNAL_STREAM', '8:54413'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ben'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ben-virtual-machine:@/tmp/.ICE-unix/2067,unix/ben-virtual-machine:/tmp/.ICE-unix/2067'), ('INVOCATION_ID', '2c63aaa52f8647c6900414c9af278ea5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.48G1R1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2416eb4b-6b3c-485e-9768-fd1f4e8291bc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ben/SNAKE/SOURCE/ros2/build/launch_files'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ben/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ben/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.146858] (launch_files) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.147543] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files//launch\n'}
+[0.147725] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files//launch/first_app.launch.py\n'}
+[0.148055] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/ament_index/resource_index/package_run_dependencies/launch_files\n'}
+[0.148396] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/ament_index/resource_index/parent_prefix_path/launch_files\n'}
+[0.148895] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/ament_prefix_path.sh\n'}
+[0.149280] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/ament_prefix_path.dsv\n'}
+[0.150448] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/path.sh\n'}
+[0.150750] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/environment/path.dsv\n'}
+[0.150879] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.bash\n'}
+[0.151053] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.sh\n'}
+[0.151117] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.zsh\n'}
+[0.151218] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/local_setup.dsv\n'}
+[0.151284] (launch_files) StdoutLine: {'line': b'-- Installing: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/package.dsv\n'}
+[0.151341] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/ament_index/resource_index/packages/launch_files\n'}
+[0.151403] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/cmake/launch_filesConfig.cmake\n'}
+[0.151457] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/cmake/launch_filesConfig-version.cmake\n'}
+[0.151515] (launch_files) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/launch_files/share/launch_files/package.xml\n'}
+[0.154841] (launch_files) CommandEnded: {'returncode': 0}
+[0.199007] (-) TimerEvent: {}
+[0.227121] (launch_files) JobEnded: {'identifier': 'launch_files', 'rc': 0}
+[0.299206] (-) TimerEvent: {}
+[0.399531] (-) TimerEvent: {}
+[0.499844] (-) TimerEvent: {}
+[0.600138] (-) TimerEvent: {}
+[0.701078] (-) TimerEvent: {}
+[0.801484] (-) TimerEvent: {}
+[0.901926] (-) TimerEvent: {}
+[1.002296] (-) TimerEvent: {}
+[1.102740] (-) TimerEvent: {}
+[1.204098] (-) TimerEvent: {}
+[1.304449] (-) TimerEvent: {}
+[1.407404] (-) TimerEvent: {}
+[1.507975] (-) TimerEvent: {}
+[1.608375] (-) TimerEvent: {}
+[1.708738] (-) TimerEvent: {}
+[1.814232] (-) TimerEvent: {}
+[1.914583] (-) TimerEvent: {}
+[2.014945] (-) TimerEvent: {}
+[2.115326] (-) TimerEvent: {}
+[2.215682] (-) TimerEvent: {}
+[2.316084] (-) TimerEvent: {}
+[2.416488] (-) TimerEvent: {}
+[2.516945] (-) TimerEvent: {}
+[2.617667] (-) TimerEvent: {}
+[2.718054] (-) TimerEvent: {}
+[2.818464] (-) TimerEvent: {}
+[2.918920] (-) TimerEvent: {}
+[3.019293] (-) TimerEvent: {}
+[3.119604] (-) TimerEvent: {}
+[3.219953] (-) TimerEvent: {}
+[3.322138] (-) TimerEvent: {}
+[3.422645] (-) TimerEvent: {}
+[3.523273] (-) TimerEvent: {}
+[3.623698] (-) TimerEvent: {}
+[3.724176] (-) TimerEvent: {}
+[3.824634] (-) TimerEvent: {}
+[3.924962] (-) TimerEvent: {}
+[4.025341] (-) TimerEvent: {}
+[4.125741] (-) TimerEvent: {}
+[4.226191] (-) TimerEvent: {}
+[4.326579] (-) TimerEvent: {}
+[4.427008] (-) TimerEvent: {}
+[4.527392] (-) TimerEvent: {}
+[4.627915] (-) TimerEvent: {}
+[4.728340] (-) TimerEvent: {}
+[4.828727] (-) TimerEvent: {}
+[4.929335] (-) TimerEvent: {}
+[5.029725] (-) TimerEvent: {}
+[5.130188] (-) TimerEvent: {}
+[5.230558] (-) TimerEvent: {}
+[5.331151] (-) TimerEvent: {}
+[5.431570] (-) TimerEvent: {}
+[5.531896] (-) TimerEvent: {}
+[5.632211] (-) TimerEvent: {}
+[5.732583] (-) TimerEvent: {}
+[5.832932] (-) TimerEvent: {}
+[5.933347] (-) TimerEvent: {}
+[6.033701] (-) TimerEvent: {}
+[6.134463] (-) TimerEvent: {}
+[6.234907] (-) TimerEvent: {}
+[6.335387] (-) TimerEvent: {}
+[6.435902] (-) TimerEvent: {}
+[6.536322] (-) TimerEvent: {}
+[6.636678] (-) TimerEvent: {}
+[6.737015] (-) TimerEvent: {}
+[6.837544] (-) TimerEvent: {}
+[6.937941] (-) TimerEvent: {}
+[7.038376] (-) TimerEvent: {}
+[7.138891] (-) TimerEvent: {}
+[7.239236] (-) TimerEvent: {}
+[7.339521] (-) TimerEvent: {}
+[7.439854] (-) TimerEvent: {}
+[7.540220] (-) TimerEvent: {}
+[7.640563] (-) TimerEvent: {}
+[7.741134] (-) TimerEvent: {}
+[7.841589] (-) TimerEvent: {}
+[7.941975] (-) TimerEvent: {}
+[8.042337] (-) TimerEvent: {}
+[8.142820] (-) TimerEvent: {}
+[8.243240] (-) TimerEvent: {}
+[8.343594] (-) TimerEvent: {}
+[8.443965] (-) TimerEvent: {}
+[8.544313] (-) TimerEvent: {}
+[8.644623] (-) TimerEvent: {}
+[8.744981] (-) TimerEvent: {}
+[8.845332] (-) TimerEvent: {}
+[8.945794] (-) TimerEvent: {}
+[9.046117] (-) TimerEvent: {}
+[9.146462] (-) TimerEvent: {}
+[9.246780] (-) TimerEvent: {}
+[9.347192] (-) TimerEvent: {}
+[9.447891] (-) TimerEvent: {}
+[9.548208] (-) TimerEvent: {}
+[9.648544] (-) TimerEvent: {}
+[9.748896] (-) TimerEvent: {}
+[9.849318] (-) TimerEvent: {}
+[9.950229] (-) TimerEvent: {}
+[10.051163] (-) TimerEvent: {}
+[10.134776] (nodes_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node1\x1b[0m\n'}
+[10.151573] (-) TimerEvent: {}
+[10.252098] (-) TimerEvent: {}
+[10.352690] (-) TimerEvent: {}
+[10.453091] (-) TimerEvent: {}
+[10.553413] (-) TimerEvent: {}
+[10.653958] (-) TimerEvent: {}
+[10.755113] (-) TimerEvent: {}
+[10.796686] (nodes_pkg) StdoutLine: {'line': b'[100%] Built target node1\n'}
+[10.814614] (nodes_pkg) CommandEnded: {'returncode': 0}
+[10.854367] (nodes_pkg) JobProgress: {'identifier': 'nodes_pkg', 'progress': 'install'}
+[10.854666] (nodes_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg'], 'cwd': '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'ben'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ben/ros2_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ben'), ('OLDPWD', '/home/ben/SNAKE/SOURCE/ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1899'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4855'), ('PICO_TOOLCHAIN_PATH', '...'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install:/home/ben/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ben'), ('JOURNAL_STREAM', '8:54413'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ben'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ben-virtual-machine:@/tmp/.ICE-unix/2067,unix/ben-virtual-machine:/tmp/.ICE-unix/2067'), ('INVOCATION_ID', '2c63aaa52f8647c6900414c9af278ea5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.48G1R1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2416eb4b-6b3c-485e-9768-fd1f4e8291bc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ben/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ben/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/opt/ros/humble')]), 'shell': False}
+[10.855500] (-) TimerEvent: {}
+[10.866282] (nodes_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.868262] (nodes_pkg) StdoutLine: {'line': b'-- Installing: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/nodes_pkg/node1\n'}
+[10.876087] (nodes_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/nodes_pkg/node1" to ""\n'}
+[10.877161] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/ament_index/resource_index/package_run_dependencies/nodes_pkg\n'}
+[10.877799] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/ament_index/resource_index/parent_prefix_path/nodes_pkg\n'}
+[10.879655] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/ament_prefix_path.sh\n'}
+[10.880014] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/ament_prefix_path.dsv\n'}
+[10.880124] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/path.sh\n'}
+[10.880200] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/path.dsv\n'}
+[10.880320] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.bash\n'}
+[10.880514] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.sh\n'}
+[10.880695] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.zsh\n'}
+[10.880864] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.dsv\n'}
+[10.880935] (nodes_pkg) StdoutLine: {'line': b'-- Installing: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.dsv\n'}
+[10.881340] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/ament_index/resource_index/packages/nodes_pkg\n'}
+[10.882212] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/cmake/nodes_pkgConfig.cmake\n'}
+[10.883504] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/cmake/nodes_pkgConfig-version.cmake\n'}
+[10.883691] (nodes_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.xml\n'}
+[10.885584] (nodes_pkg) CommandEnded: {'returncode': 0}
+[10.955699] (-) TimerEvent: {}
+[10.985475] (nodes_pkg) JobEnded: {'identifier': 'nodes_pkg', 'rc': 0}
+[10.987354] (-) EventReactorShutdown: {}
