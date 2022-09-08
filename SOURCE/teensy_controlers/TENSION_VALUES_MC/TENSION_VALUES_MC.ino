@@ -1,3 +1,7 @@
+//==============================================================================
+//Ben Swisa
+//bensw@post.bgu.ac.il
+//==============================================================================
 
 //=====[ INCULDE ]==========================================
 
@@ -49,6 +53,10 @@
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
 #define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
 
+//=====[ Function declaraion ]===========================================================
+void error_loop();
+void publish_msg();
+
 //=====[ VARIABLES ]=========================================
 
 byte DOUTS[N_tensions] = {DOUT1, DOUT2, DOUT3, DOUT4, DOUT5, DOUT6, DOUT7, DOUT8, DOUT9, DOUT10, DOUT11, DOUT12};
@@ -77,30 +85,7 @@ rcl_allocator_t allocator;
 rcl_node_t node;
 rcl_timer_t timer;
 
-
-
-
-void error_loop(){
-  while(1){
-    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
-    delay(100);
-  }
-}
-
-void publish_msg()
-{  
- 
-    scales.readRaw(result);             // Read raw data from all the tension-meters
-    
-  for (int i=0; i<(N_joints*3); i++)  // --  Convert RAW data to Kg
-    msg.data.data[i] = P[i][0]*result[i] + P[i][1];
-
-   //----- publish the msg -------
-
-   RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
-    
-  
-}
+//=====[ SETUP ]================================================================
 
 void setup() {
 
@@ -141,8 +126,32 @@ void setup() {
 
 }
 
+//=====[ LOOP ]================================================================
 void loop() {
   delay(1);
   publish_msg();
   RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+}
+
+//=====[ FUNCTIONS ]================================================================
+void publish_msg()
+{  
+ 
+    scales.readRaw(result);             // Read raw data from all the tension-meters
+    
+  for (int i=0; i<(N_joints*3); i++)  // --  Convert RAW data to Kg
+    msg.data.data[i] = P[i][0]*result[i] + P[i][1];
+
+   //----- publish the msg -------
+
+   RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL)); 
+}
+
+
+
+void error_loop(){
+  while(1){
+    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+    delay(100);
+  }
 }
