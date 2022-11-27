@@ -35,7 +35,7 @@ public:
 private:
     // void publish_motor_pwm(int *arr){
     //     auto message = std_msgs::msg::Int32MultiArray();
-    //     message.data={0,0,0,0,0,0,0,0,0,0,0,0};
+    //     message.data={0,50,0,0,0,0,0,0,0,0,0,0};
     //     for(int i=0;i<12;i++){
     //     message.data[i]=arr[i];
     //     }
@@ -48,13 +48,13 @@ private:
     }
 
     void joint_cmd_callback(const std_msgs::msg::Float32MultiArray msg){ 
-      // RCLCPP_INFO(this->get_logger(), " %f , %f \n",msg.data[0],msg.data[1]);
-      // auto message = std_msgs::msg::Int32MultiArray();
-      //   message.data={0,0,0,0,0,0,0,0,0,0,0,0};
-      //   for(int i=0;i<12;i++){
-      //   message.data[i]=(int32_t)msg.data[i];
-      //   }
-      //   motor_cmd_publisher_->publish(message);
+      RCLCPP_INFO(this->get_logger(), " %f , %f \n",msg.data[0],msg.data[1]);
+      auto message = std_msgs::msg::Int32MultiArray();
+        message.data={0,0,-50,0,0,0,0,0,0,0,0,0};
+        for(int i=0;i<12;i++){
+        message.data[i]=(int32_t)msg.data[i];
+        }
+        motor_cmd_publisher_->publish(message);
     }
     
     void tension_val_callback(const std_msgs::msg::Float32MultiArray msg){

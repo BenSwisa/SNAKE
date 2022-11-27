@@ -21,10 +21,14 @@ find_package(std_msgs REQUIRED)
 add_executable(node1 src/node1.cpp)
 ament_target_dependencies(node1 rclcpp std_msgs)
 
+add_executable(node2 src/node2.cpp)
+ament_target_dependencies(node2 rclcpp std_msgs)
+
 
 install(TARGETS
   node1
-
+  node2
+  
   DESTINATION lib/${PROJECT_NAME}
 )
 
