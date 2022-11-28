@@ -50,7 +50,7 @@ private:
     void joint_cmd_callback(const std_msgs::msg::Float32MultiArray msg){ 
       RCLCPP_INFO(this->get_logger(), " %f , %f \n",msg.data[0],msg.data[1]);
       auto message = std_msgs::msg::Int32MultiArray();
-        message.data={0,0,-50,0,0,0,0,0,0,0,0,0};
+        message.data={0,0,0,0,0,0,0,0,0,0,0,0};
         for(int i=0;i<12;i++){
         message.data[i]=(int32_t)msg.data[i];
         }

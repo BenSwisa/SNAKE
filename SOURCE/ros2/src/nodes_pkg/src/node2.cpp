@@ -37,7 +37,7 @@ class MinimalPublisher : public rclcpp::Node
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr publisher_;
     size_t count_;
-    int arr[12]={0,50,0,0,0,0,0,0,0,0,0,0};
+    int arr[12]={0,0,0,0,0,0,0,0,0,0,0,0};
 };
 
 int main(int argc, char * argv[])
