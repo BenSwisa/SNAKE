@@ -94,3 +94,60 @@
 [1.180s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [1.180s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
 [1.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[16.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[16.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg
+[16.604s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nodes_pkg)
+[16.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg
+[16.611s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg' for CMake module files
+[16.612s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg' for CMake config files
+[16.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('nodes_pkg', 'cmake_prefix_path')
+[16.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/hook/cmake_prefix_path.ps1'
+[16.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/hook/cmake_prefix_path.dsv'
+[16.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/hook/cmake_prefix_path.sh'
+[16.617s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib'
+[16.617s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/bin'
+[16.617s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/pkgconfig/nodes_pkg.pc'
+[16.617s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/python3.10/site-packages'
+[16.618s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/bin'
+[16.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.ps1'
+[16.620s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.dsv'
+[16.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.sh'
+[16.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.bash'
+[16.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.zsh'
+[16.623s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/colcon-core/packages/nodes_pkg)
+[16.736s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nodes_pkg)
+[16.738s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg' for CMake module files
+[16.739s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg' for CMake config files
+[16.740s] Level 1:colcon.colcon_core.shell:create_environment_hook('nodes_pkg', 'cmake_prefix_path')
+[16.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/hook/cmake_prefix_path.ps1'
+[16.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/hook/cmake_prefix_path.dsv'
+[16.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/hook/cmake_prefix_path.sh'
+[16.744s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib'
+[16.744s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/bin'
+[16.744s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/pkgconfig/nodes_pkg.pc'
+[16.744s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/python3.10/site-packages'
+[16.745s] Level 1:colcon.colcon_core.environment:checking '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/bin'
+[16.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.ps1'
+[16.747s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.dsv'
+[16.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.sh'
+[16.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.bash'
+[16.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.zsh'
+[16.750s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/colcon-core/packages/nodes_pkg)
+[16.751s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.751s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.752s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.752s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.765s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.765s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.765s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.796s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.798s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ben/SNAKE/SOURCE/ros2/install/local_setup.ps1'
+[16.799s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ben/SNAKE/SOURCE/ros2/install/_local_setup_util_ps1.py'
+[16.800s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ben/SNAKE/SOURCE/ros2/install/setup.ps1'
+[16.805s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ben/SNAKE/SOURCE/ros2/install/local_setup.sh'
+[16.806s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ben/SNAKE/SOURCE/ros2/install/_local_setup_util_sh.py'
+[16.807s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ben/SNAKE/SOURCE/ros2/install/setup.sh'
+[16.811s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ben/SNAKE/SOURCE/ros2/install/local_setup.bash'
+[16.812s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ben/SNAKE/SOURCE/ros2/install/setup.bash'
+[16.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ben/SNAKE/SOURCE/ros2/install/local_setup.zsh'
+[16.817s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ben/SNAKE/SOURCE/ros2/install/setup.zsh'
