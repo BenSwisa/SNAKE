@@ -26,10 +26,10 @@ class MinimalPublisher : public rclcpp::Node
   private:
     void timer_callback()
     {
-      if(arr[0]>450) arr[0]=100;
-      arr[0]= arr[0]+30;
+      // if(arr[0]>450) arr[0]=100;
+      // arr[0]= arr[0]+30;
       auto message = std_msgs::msg::Float32MultiArray();
-      message.data = {0,0,0,0,0,0,0,0,0,0,0,0};
+      message.data = {0,-10,0,0,0,0};
     //   message.data[0]=arr[0];
       RCLCPP_INFO(this->get_logger(), "Publishing: '%f'", message.data[0]);
       publisher_->publish(message);
@@ -37,7 +37,7 @@ class MinimalPublisher : public rclcpp::Node
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr publisher_;
     size_t count_;
-    int arr[12]={0,0,0,0,0,0,0,0,0,0,0,0};
+    // int arr[12]={0,0,0,0,0,0,0,0,0,0,0,0};
 };
 
 int main(int argc, char * argv[])

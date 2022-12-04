@@ -44,21 +44,48 @@ private:
     // }
 
     void joint_val_callback(const std_msgs::msg::Float32MultiArray msg){
-      RCLCPP_INFO(this->get_logger(), " %f , %f \n",msg.data[0],msg.data[1]);
+      for(int i=0;i<6;i++){
+        current_enc_val[i]=msg.data[i];
+        }
     }
 
     void joint_cmd_callback(const std_msgs::msg::Float32MultiArray msg){ 
       RCLCPP_INFO(this->get_logger(), " %f , %f \n",msg.data[0],msg.data[1]);
+
+      // auto message = std_msgs::msg::Int32MultiArray();
+      //   message.data={0,0,0,0,0,0,0,0,0,0,0,0};
+      //   for(int i=0;i<12;i++){
+      //   message.data[i]=(int32_t)msg.data[i];
+      //   }
+      //   motor_cmd_publisher_->publish(message);
+
+        for(int i=0;i<6;i++){
+        joint_cmd_val[i]=msg.data[i];
+        }
+        controller();
+    }
+
+    void controller(){
+       motor_cmd_val[0]=(50*(joint_cmd_val[2]-current_enc_val[2]));
+       RCLCPP_INFO(this->get_logger(), " %f  \n",motor_cmd_val[0]);
+       if(motor_cmd_val[0]>100)
+        motor_cmd_val[0]=100;
+       else
+        if(motor_cmd_val[0]<-100)
+        motor_cmd_val[0]=-100;
       auto message = std_msgs::msg::Int32MultiArray();
         message.data={0,0,0,0,0,0,0,0,0,0,0,0};
-        for(int i=0;i<12;i++){
-        message.data[i]=(int32_t)msg.data[i];
-        }
+      
+        message.data[0]=(int32_t)motor_cmd_val[0];
+        
         motor_cmd_publisher_->publish(message);
     }
     
     void tension_val_callback(const std_msgs::msg::Float32MultiArray msg){
      RCLCPP_INFO(this->get_logger(), " %f , %f \n",msg.data[0],msg.data[1]);
+      for(int i=0;i<12;i++){
+        current_tension_val[i]=msg.data[i];
+        }
     }
     
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr joint_val_subscriber_;
@@ -66,6 +93,12 @@ private:
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr joint_cmd_subscriber_;
     rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr motor_cmd_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
+    float joint_cmd_val[6]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string 
+    float current_enc_val[6]={0};
+    float last_enc_val[6]={0};
+    float current_tension_val[12]={0};
+    float last_tension_val[12]={0};
+    float motor_cmd_val[12]={0};
 
 };
  

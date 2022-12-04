@@ -1,0 +1,5 @@
+[0.052s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.190s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.264s] [ 25%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[0.319s] [ 75%] Built target node2
+[14.095s] [100%] [32m[1mLinking CXX executable node1[0m

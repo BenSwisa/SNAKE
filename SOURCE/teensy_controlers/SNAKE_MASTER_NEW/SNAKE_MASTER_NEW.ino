@@ -59,7 +59,7 @@ int count=0;
 
 float arr[N_links*N_enc_joint] = {0};
 uint8_t slave_add[N_links] = {00,100,101}; //
-float joint_offset[N_links*N_enc_joint] = {0}; //determined at test, each joint will have a different offset
+float joint_offset[N_links*N_enc_joint] = {166.772,289.385,0,0,0,0}; //determined at test, each joint will have a different offset
 int test;
 union u_tag {
   byte b[4];
@@ -170,8 +170,8 @@ void Request_Event(){
   enc.get_pos2(); // manually takes self position from encoders
   arr[0] = enc.AllowAccess_Y(); //placing it at the begining of the array
   arr[1] = enc.AllowAccess_Z();
-  arr[0] -= joint_offset[0]; //manually decreceasing the offset values
-  arr[1] -= joint_offset[1]; 
+  arr[0] = joint_offset[0]-arr[0]; //manually decreceasing the offset values
+  arr[1] = joint_offset[1]-arr[1]; 
   //---------- getting data from slaves ----------
   for (int joint_i = 1; joint_i < N_links; joint_i++) {
     int counter=0;
@@ -195,7 +195,7 @@ void Request_Event(){
     for(int j=0 ; j<N_enc_joint ;j++){ //this loop takes in two, 4 byte data streams from slaves
       for(int i=0 ; i<4 ;i++)
         u.b[i]=Wire.read();
-      arr[joint_i*2+j] = wrapTo180(u.fval - joint_offset[joint_i*2+j]);      //^^ adding values from 'u' into arr[] at appropriate location, plus decreacing the appropriate Offset    
+      arr[joint_i*2+j] = wrapTo180((-u.fval + joint_offset[joint_i*2+j]));      //^^ adding values from 'u' into arr[] at appropriate location, plus decreacing the appropriate Offset    
       }
   }
   //-----------PRINT--------------
