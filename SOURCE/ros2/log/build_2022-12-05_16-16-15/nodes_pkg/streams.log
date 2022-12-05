@@ -1,0 +1,17 @@
+[0.016s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.094s] [ 50%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[0.094s] [ 75%] Built target node2
+[3.188s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::get_parameters()[m[K’:
+[3.188s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:98:109:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[3.189s]    98 | "enc_per_joint").get_parameter_value().get_type<std::vector<double[01;31m[K>>[m[K();
+[3.189s]       |                                                                   [01;31m[K^~[m[K
+[3.189s] 
+[3.189s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:98:112:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[3.189s]    98 | "enc_per_joint").get_parameter_value().get_type<std::vector<double>>([01;31m[K)[m[K;
+[3.189s]       |                                                                      [01;31m[K^[m[K
+[3.189s] 
+[6.029s] gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1
+[6.029s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2
+[6.029s] gmake: *** [Makefile:146: all] Error 2
+[6.032s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3

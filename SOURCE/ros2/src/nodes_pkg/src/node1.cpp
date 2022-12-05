@@ -1,16 +1,19 @@
+//==============================================================================
+//Ben Swisa
+//bensw@post.bgu.ac.il
+//==============================================================================
+
 #include <chrono>
 #include <functional>
 #include <memory>
 #include <string>
+#include <vector>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
 #include "std_msgs/msg/float32_multi_array.hpp"
 
 using std::placeholders::_1;
-// using std::placeholders::_2;
-// using std::placeholders::_3;
-
 using namespace std::chrono_literals;
 
  
@@ -19,6 +22,7 @@ class Node1 : public rclcpp::Node
 public:
     Node1() : Node("node1") 
     {
+      get_parameters(); // set and get the parameters
      RCLCPP_INFO(this->get_logger(), "Node1 has been started.");
      // subscriber to encoder current values
      joint_val_subscriber_ = this->create_subscription<std_msgs::msg::Float32MultiArray>(
@@ -31,26 +35,12 @@ public:
       "joint_cmd_topic", 10, std::bind(&Node1::joint_cmd_callback, this, _1));
       // pwm command publisher to motors
      motor_cmd_publisher_ = this->create_publisher<std_msgs::msg::Int32MultiArray>("motor_cmd_topic",10);
-          controller_ = this->create_wall_timer(std::chrono::milliseconds((int)(1/100*1000)), std::bind(&Node1::timer_callback, this)); //publish motor cmd every second  
+    controller_ = this->create_wall_timer(std::chrono::milliseconds((int)(1/controller_freq_*1000)), std::bind(&Node1::controller, this)); //publish motor cmd every second  
      
     }
 
  
 private:
-    void timer_callback(){
-      motor_cmd_val[0]=(50*(joint_cmd_val[1]-current_enc_val[1]));
-       RCLCPP_INFO(this->get_logger(), " %f  \n",motor_cmd_val[0]);
-       if(motor_cmd_val[0]>100)
-        motor_cmd_val[0]=100;
-       else
-        if(motor_cmd_val[0]<-100)
-        motor_cmd_val[0]=-100;
-      auto message = std_msgs::msg::Int32MultiArray();
-        message.data={0,0,0,0,0,0,0,0,0,0,0,0};  
-        message.data[0]=(int32_t)motor_cmd_val[0];
-        motor_cmd_publisher_->publish(message);
-
-    }
 
     void joint_val_callback(const std_msgs::msg::Float32MultiArray msg){
       for(int i=0;i<6;i++){
@@ -66,9 +56,10 @@ private:
         
     }
 
+  // =====================[CONTROLLER]===========================
     void controller(){
-       motor_cmd_val[0]=(50*(joint_cmd_val[1]-current_enc_val[1]));
-       RCLCPP_INFO(this->get_logger(), " %f  \n",motor_cmd_val[0]);
+      motor_cmd_val[0]=(50*(joint_cmd_val[1]-current_enc_val[1]));
+      //  RCLCPP_INFO(this->get_logger(), " %f  \n",motor_cmd_val[0]);
        if(motor_cmd_val[0]>100)
         motor_cmd_val[0]=100;
        else
@@ -78,6 +69,7 @@ private:
         message.data={0,0,0,0,0,0,0,0,0,0,0,0};  
         message.data[0]=(int32_t)motor_cmd_val[0];
         motor_cmd_publisher_->publish(message);
+
     }
     
     void tension_val_callback(const std_msgs::msg::Float32MultiArray msg){
@@ -87,20 +79,51 @@ private:
         }
     }
     
+  // =====================[SET PARAMETERS]===========================
+    void get_parameters(){ 
+      this->declare_parameter("enc_per_joint",0); 
+      this->declare_parameter("linked_joints",0); 
+      this->declare_parameter("strings_per_joint",0); 
+      this->declare_parameter("max_pwm",0);
+      this->declare_parameter("enc_y",0); 
+      this->declare_parameter("enc_z",1);  
+      this->declare_parameter("controller_freq",100); 
+      this->declare_parameter("kp",std::vector<double>({0})); 
+      this->declare_parameter("ki",std::vector<double>({0})); 
+      this->declare_parameter("kd",std::vector<double>({0})); 
+      enc_per_joint_= this->get_parameter("enc_per_joint").as_int();
+      controller_freq_ = this->get_parameter("controller_freq").as_int();
+      linked_joints_ = this->get_parameter("linked_joints" ).as_int();
+      enc_y_ = this->get_parameter("enc_y" ).as_int();
+      enc_z_ = this->get_parameter("enc_z" ).as_int();
+      strings_per_joint_ = this->get_parameter("strings_per_joint" ).as_int();
+      max_pwm_ = this->get_parameter("max_pwm").as_int();
+      kp_ = this->get_parameter("kp").as_double_array();
+      ki_ = this->get_parameter("ki").as_double_array();
+      kd_ = this->get_parameter("kd").as_double_array();
+
+  }
+
+// =========================[CONSTANTS]=========================================
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr joint_val_subscriber_;
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr tension_val_subscriber_;
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr joint_cmd_subscriber_;
     rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr motor_cmd_publisher_;
     rclcpp::TimerBase::SharedPtr controller_;
-    float joint_cmd_val[6]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string 
-    float current_enc_val[6]={0};
-    float last_enc_val[6]={0};
-    float current_tension_val[12]={0};
-    float last_tension_val[12]={0};
-    float motor_cmd_val[12]={0};
+    float joint_cmd_val[enc_per_joint_*linked_joints_]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string 
+    float current_enc_val[enc_per_joint_*linked_joints_]={0};
+    float last_enc_val[enc_per_joint_*linked_joints_]={0};
+    float current_tension_val[strings_per_joint_*(linked_joints_+1)]={0}; // adding 1 for now need to be corrected
+    float last_tension_val[strings_per_joint_*(linked_joints_+1)]={0};// adding 1 for now need to be corrected
+    float motor_cmd_val[strings_per_joint_*(linked_joints_+1)]={0};// adding 1 for now need to be corrected
+    std::vector<double>  kp_;
+    std::vector<double>  ki_;
+    std::vector<double> kd_;
+    int  enc_per_joint_,controller_freq_,linked_joints_,strings_per_joint_,max_pwm_,enc_z_,enc_y_;
 
 };
  
+//==========================[MAIN]===========================
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
@@ -109,3 +132,5 @@ int main(int argc, char **argv)
     rclcpp::shutdown();
     return 0;
 }
+
+

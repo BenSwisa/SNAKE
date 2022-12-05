@@ -1,0 +1,23 @@
+[0.021s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.154s] [ 50%] Built target node2
+[0.159s] [ 75%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[3.020s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:27:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.020s]   120 |     std::vector<std::float[01;31m[K>[m[K  kp_;
+[3.020s]       |                           [01;31m[K^[m[K
+[3.020s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:27:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[3.040s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::get_parameters()[m[K’:
+[3.040s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:99:60:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kas_int[m[K’ in ‘[01m[K((Node1*)this)->Node1::<anonymous>.rclcpp::Node::get_parameter<int>(std::__cxx11::basic_string<char>(((const char*)"linked_joints"), std::allocator<char>()), ((Node1*)this)->Node1::linked_joints_)[m[K’, which is of non-class type ‘[01m[Kbool[m[K’
+[3.040s]    99 |       this->get_parameter("linked_joints", linked_joints_).[01;31m[Kas_int[m[K();
+[3.041s]       |                                                            [01;31m[K^~~~~~[m[K
+[3.041s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:100:68:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kas_int[m[K’ in ‘[01m[K((Node1*)this)->Node1::<anonymous>.rclcpp::Node::get_parameter<int>(std::__cxx11::basic_string<char>(((const char*)"strings_per_joint"), std::allocator<char>()), ((Node1*)this)->Node1::strings_per_joint_)[m[K’, which is of non-class type ‘[01m[Kbool[m[K’
+[3.041s]   100 |  this->get_parameter("strings_per_joint", strings_per_joint_).[01;31m[Kas_int[m[K();
+[3.041s]       |                                                               [01;31m[K^~~~~~[m[K
+[3.041s] 
+[3.041s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:101:48:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kas_int[m[K’ in ‘[01m[K((Node1*)this)->Node1::<anonymous>.rclcpp::Node::get_parameter<int>(std::__cxx11::basic_string<char>(((const char*)"max_pwm"), std::allocator<char>()), ((Node1*)this)->Node1::max_pwm_)[m[K’, which is of non-class type ‘[01m[Kbool[m[K’
+[3.041s]   101 |       this->get_parameter("max_pwm", max_pwm_).[01;31m[Kas_int[m[K();
+[3.041s]       |                                                [01;31m[K^~~~~~[m[K
+[5.724s] gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1
+[5.724s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2
+[5.724s] gmake: *** [Makefile:146: all] Error 2
+[5.743s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3

@@ -1,0 +1,10 @@
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::get_parameters()[m[K’:
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:98:106:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst std::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kint[m[K’ in assignment
+   98 | [01;31m[Keter("enc_per_joint").get_parameter_value().get<std::vector<double>>()[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                     [01;31m[K|[m[K
+      |                                                                     [01;31m[Kconst std::vector<double, std::allocator<double> >[m[K
+
+gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
