@@ -16,6 +16,10 @@
 using std::placeholders::_1;
 using namespace std::chrono_literals;
 
+// temporary becouse parameters change - consider malloc
+#define enc_per_joint_ 2 
+#define strings_per_joint_ 3
+#define linked_joints_ 3
  
 class Node1 : public rclcpp::Node 
 {
@@ -81,27 +85,26 @@ private:
     
   // =====================[SET PARAMETERS]===========================
     void get_parameters(){ 
-      this->declare_parameter("enc_per_joint",0); 
-      this->declare_parameter("linked_joints",0); 
-      this->declare_parameter("strings_per_joint",0); 
+      // this->declare_parameter("enc_per_joint",0); 
+      // this->declare_parameter("linked_joints",0); 
+      // this->declare_parameter("strings_per_joint",0); 
       this->declare_parameter("max_pwm",0);
       this->declare_parameter("enc_y",0); 
       this->declare_parameter("enc_z",1);  
       this->declare_parameter("controller_freq",100); 
-      this->declare_parameter("kp",std::vector<double>({0})); 
-      this->declare_parameter("ki",std::vector<double>({0})); 
-      this->declare_parameter("kd",std::vector<double>({0})); 
-      enc_per_joint_= this->get_parameter("enc_per_joint").as_int();
+      this->declare_parameter("kp",std::vector<double>({0.0})); 
+      this->declare_parameter("ki",std::vector<double>({0.0})); 
+      this->declare_parameter("kd",std::vector<double>({0.0})); 
+      // enc_per_joint_= this->get_parameter("enc_per_joint").as_int();
       controller_freq_ = this->get_parameter("controller_freq").as_int();
-      linked_joints_ = this->get_parameter("linked_joints" ).as_int();
+      // linked_joints_ = this->get_parameter("linked_joints" ).as_int();
       enc_y_ = this->get_parameter("enc_y" ).as_int();
       enc_z_ = this->get_parameter("enc_z" ).as_int();
-      strings_per_joint_ = this->get_parameter("strings_per_joint" ).as_int();
+      // strings_per_joint_ = this->get_parameter("strings_per_joint" ).as_int();
       max_pwm_ = this->get_parameter("max_pwm").as_int();
       kp_ = this->get_parameter("kp").as_double_array();
       ki_ = this->get_parameter("ki").as_double_array();
       kd_ = this->get_parameter("kd").as_double_array();
-
   }
 
 // =========================[CONSTANTS]=========================================
@@ -110,6 +113,10 @@ private:
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr joint_cmd_subscriber_;
     rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr motor_cmd_publisher_;
     rclcpp::TimerBase::SharedPtr controller_;
+    // int  enc_per_joint_=2;
+    // int  linked_joints_=2;
+    // int  strings_per_joint_=2;
+    int controller_freq_,max_pwm_,enc_z_,enc_y_;
     float joint_cmd_val[enc_per_joint_*linked_joints_]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string 
     float current_enc_val[enc_per_joint_*linked_joints_]={0};
     float last_enc_val[enc_per_joint_*linked_joints_]={0};
@@ -119,7 +126,7 @@ private:
     std::vector<double>  kp_;
     std::vector<double>  ki_;
     std::vector<double> kd_;
-    int  enc_per_joint_,controller_freq_,linked_joints_,strings_per_joint_,max_pwm_,enc_z_,enc_y_;
+    
 
 };
  

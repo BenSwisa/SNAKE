@@ -1,0 +1,81 @@
+[0.022s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target node2[0m
+[0.095s] [ 25%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[0.102s] [ 75%] Built target node2
+[2.378s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc_per_joint_[m[K’ was not declared in this scope
+[2.378s]   113 |     float joint_cmd_val[[01;31m[Kenc_per_joint_[m[K*linked_joints_]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string
+[2.378s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.388s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:40:[m[K [01;31m[Kerror: [m[K‘[01m[Klinked_joints_[m[K’ was not declared in this scope
+[2.388s]   113 |     float joint_cmd_val[enc_per_joint_*[01;31m[Klinked_joints_[m[K]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string
+[2.388s]       |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.393s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc_per_joint_[m[K’ was not declared in this scope
+[2.394s]   114 |     float current_enc_val[[01;31m[Kenc_per_joint_[m[K*linked_joints_]={0};
+[2.394s]       |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.399s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klinked_joints_[m[K’ was not declared in this scope
+[2.399s]   114 |     float current_enc_val[enc_per_joint_*[01;31m[Klinked_joints_[m[K]={0};
+[2.400s]       |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.405s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc_per_joint_[m[K’ was not declared in this scope
+[2.405s]   115 |     float last_enc_val[[01;31m[Kenc_per_joint_[m[K*linked_joints_]={0};
+[2.405s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.410s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:39:[m[K [01;31m[Kerror: [m[K‘[01m[Klinked_joints_[m[K’ was not declared in this scope
+[2.411s]   115 |     float last_enc_val[enc_per_joint_*[01;31m[Klinked_joints_[m[K]={0};
+[2.411s]       |                                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.417s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:116:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrings_per_joint_[m[K’ was not declared in this scope
+[2.417s]   116 |     float current_tension_val[[01;31m[Kstrings_per_joint_[m[K*(linked_joints_+1)]={0}; // adding 1 for now need to be corrected
+[2.417s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.423s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:116:51:[m[K [01;31m[Kerror: [m[K‘[01m[Klinked_joints_[m[K’ was not declared in this scope
+[2.423s]   116 |     float current_tension_val[strings_per_joint_*([01;31m[Klinked_joints_[m[K+1)]={0}; // adding 1 for now need to be corrected
+[2.423s]       |                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.430s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:117:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrings_per_joint_[m[K’ was not declared in this scope
+[2.430s]   117 |     float last_tension_val[[01;31m[Kstrings_per_joint_[m[K*(linked_joints_+1)]={0};// adding 1 for now need to be corrected
+[2.430s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.436s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:117:48:[m[K [01;31m[Kerror: [m[K‘[01m[Klinked_joints_[m[K’ was not declared in this scope
+[2.436s]   117 |     float last_tension_val[strings_per_joint_*([01;31m[Klinked_joints_[m[K+1)]={0};// adding 1 for now need to be corrected
+[2.436s]       |                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.443s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:118:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrings_per_joint_[m[K’ was not declared in this scope
+[2.443s]   118 |     float motor_cmd_val[[01;31m[Kstrings_per_joint_[m[K*(linked_joints_+1)]={0};// adding 1 for now need to be corrected
+[2.443s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.449s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:118:45:[m[K [01;31m[Kerror: [m[K‘[01m[Klinked_joints_[m[K’ was not declared in this scope
+[2.449s]   118 |     float motor_cmd_val[strings_per_joint_*([01;31m[Klinked_joints_[m[K+1)]={0};// adding 1 for now need to be corrected
+[2.449s]       |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.449s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:125:40:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Node1::linked_joints_[m[K’
+[2.449s]   125 |     int controller_freq_,linked_joints_[01;31m[K,[m[Kstrings_per_joint_,max_pwm_,enc_z_,enc_y_;
+[2.450s]       |                                        [01;31m[K^[m[K
+[2.450s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:123:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Node1::linked_joints_[m[K’
+[2.450s]   123 |     int  [01;36m[Klinked_joints_[m[K=1;
+[2.450s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.450s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:125:59:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Node1::strings_per_joint_[m[K’
+[2.450s]   125 |     int controller_freq_,linked_joints_,strings_per_joint_[01;31m[K,[m[Kmax_pwm_,enc_z_,enc_y_;
+[2.451s]       |                                                           [01;31m[K^[m[K
+[2.451s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:124:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Node1::strings_per_joint_[m[K’
+[2.451s]   124 |     int  [01;36m[Kstrings_per_joint_[m[K=1;
+[2.451s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.491s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::joint_val_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[2.491s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:47:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_enc_val[m[K’ was not declared in this scope
+[2.491s]    47 |         [01;31m[Kcurrent_enc_val[m[K[i]=msg.data[i];
+[2.491s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.498s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::joint_cmd_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[2.498s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_val[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint_cmd_callback[m[K’?
+[2.498s]    54 |         [01;31m[Kjoint_cmd_val[m[K[i]=msg.data[i];
+[2.498s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.498s]       |         [32m[Kjoint_cmd_callback[m[K
+[2.504s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::controller()[m[K’:
+[2.504s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:61:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_cmd_val[m[K’ was not declared in this scope
+[2.504s]    61 |       [01;31m[Kmotor_cmd_val[m[K[0]=(50*(joint_cmd_val[1]-current_enc_val[1]));
+[2.505s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[2.509s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:61:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_val[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint_cmd_callback[m[K’?
+[2.509s]    61 |       motor_cmd_val[0]=(50*([01;31m[Kjoint_cmd_val[m[K[1]-current_enc_val[1]));
+[2.510s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.510s]       |                             [32m[Kjoint_cmd_callback[m[K
+[2.515s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:61:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_enc_val[m[K’ was not declared in this scope
+[2.515s]    61 |       motor_cmd_val[0]=(50*(joint_cmd_val[1]-[01;31m[Kcurrent_enc_val[m[K[1]));
+[2.516s]       |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.523s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::tension_val_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[2.523s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:78:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_tension_val[m[K’ was not declared in this scope
+[2.523s]    78 |         [01;31m[Kcurrent_tension_val[m[K[i]=msg.data[i];
+[2.523s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.343s] gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1
+[5.345s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2
+[5.346s] gmake: *** [Makefile:146: all] Error 2
+[5.347s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3

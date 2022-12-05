@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000645] (-) JobUnselected: {'identifier': 'launch_files'}
+[0.000731] (nodes_pkg) JobQueued: {'identifier': 'nodes_pkg', 'dependencies': OrderedDict()}
+[0.000807] (nodes_pkg) JobStarted: {'identifier': 'nodes_pkg'}
+[0.012361] (nodes_pkg) JobProgress: {'identifier': 'nodes_pkg', 'progress': 'cmake'}
+[0.013084] (nodes_pkg) JobProgress: {'identifier': 'nodes_pkg', 'progress': 'build'}
+[0.014263] (nodes_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg', '--', '-j3', '-l3'], 'cwd': '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'ben'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ben/ros2_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ben'), ('OLDPWD', '/home/ben/SNAKE/SOURCE/ros2/config'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1741'), ('SYSTEMD_EXEC_PID', '2136'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6256'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install:/home/ben/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ben'), ('JOURNAL_STREAM', '8:51720'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ben'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ben-virtual-machine:@/tmp/.ICE-unix/2084,unix/ben-virtual-machine:/tmp/.ICE-unix/2084'), ('INVOCATION_ID', 'a50475cbe1ba42f0a5685aac324a4ceb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2KYAW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/home/ben/ros2_ws/install/spot_micro:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:b3835649-1ed5-4f20-864f-88f8500dddf1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ben/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg:/home/ben/SNAKE/SOURCE/ros2/install/launch_files:/home/ben/ros2_ws/install/my_robot_bringup:/home/ben/ros2_ws/install/my_cpp_pkg:/home/ben/ros2_ws/install/tutorial_interfaces:/home/ben/ros2_ws/install/spot_micro:/opt/ros/humble')]), 'shell': False}
+[0.068270] (nodes_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node1\x1b[0m\n'}
+[0.083237] (nodes_pkg) StdoutLine: {'line': b'[ 50%] Built target node2\n'}
+[0.098565] (-) TimerEvent: {}
+[0.101643] (nodes_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o\x1b[0m\n'}
+[0.198665] (-) TimerEvent: {}
+[0.299029] (-) TimerEvent: {}
+[0.399377] (-) TimerEvent: {}
+[0.499741] (-) TimerEvent: {}
+[0.600389] (-) TimerEvent: {}
+[0.701027] (-) TimerEvent: {}
+[0.801506] (-) TimerEvent: {}
+[0.902053] (-) TimerEvent: {}
+[1.002488] (-) TimerEvent: {}
+[1.102975] (-) TimerEvent: {}
+[1.203489] (-) TimerEvent: {}
+[1.303990] (-) TimerEvent: {}
+[1.404441] (-) TimerEvent: {}
+[1.504849] (-) TimerEvent: {}
+[1.605203] (-) TimerEvent: {}
+[1.705573] (-) TimerEvent: {}
+[1.805920] (-) TimerEvent: {}
+[1.906288] (-) TimerEvent: {}
+[2.006627] (-) TimerEvent: {}
+[2.107074] (-) TimerEvent: {}
+[2.207508] (-) TimerEvent: {}
+[2.307965] (-) TimerEvent: {}
+[2.408458] (-) TimerEvent: {}
+[2.422762] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:116:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint Node1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.422960] (nodes_pkg) StderrLine: {'line': b'  116 |     int controller_freq_,linked_joints_\x1b[01;31m\x1b[K,\x1b[m\x1b[Kstrings_per_joint_,max_pwm_,enc_z_,enc_y_;\n'}
+[2.423023] (nodes_pkg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.423080] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint Node1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.423134] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.423189] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.423239] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:116:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint Node1::strings_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.423294] (nodes_pkg) StderrLine: {'line': b'  116 |     int controller_freq_,linked_joints_,strings_per_joint_\x1b[01;31m\x1b[K,\x1b[m\x1b[Kmax_pwm_,enc_z_,enc_y_;\n'}
+[2.423342] (nodes_pkg) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.423404] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint Node1::strings_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.423455] (nodes_pkg) StderrLine: {'line': b'  115 |     int  \x1b[01;36m\x1b[Kstrings_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.423530] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.423581] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:117:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::enc_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.423691] (nodes_pkg) StderrLine: {'line': b'  117 |     float joint_cmd_val[\x1b[01;31m\x1b[Kenc_per_joint_\x1b[m\x1b[K*linked_joints_]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string\n'}
+[2.423790] (nodes_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.423847] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.423898] (nodes_pkg) StderrLine: {'line': b'  113 |     int  \x1b[01;36m\x1b[Kenc_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.423954] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.424322] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:117:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.424381] (nodes_pkg) StderrLine: {'line': b'  117 |     float joint_cmd_val[enc_per_joint_*\x1b[01;31m\x1b[Klinked_joints_\x1b[m\x1b[K]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string\n'}
+[2.424439] (nodes_pkg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.424489] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.424545] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.424593] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.424753] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:118:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::enc_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.424844] (nodes_pkg) StderrLine: {'line': b'  118 |     float current_enc_val[\x1b[01;31m\x1b[Kenc_per_joint_\x1b[m\x1b[K*linked_joints_]={0};\n'}
+[2.424902] (nodes_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.424951] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.425007] (nodes_pkg) StderrLine: {'line': b'  113 |     int  \x1b[01;36m\x1b[Kenc_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.425056] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.425110] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:118:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.425160] (nodes_pkg) StderrLine: {'line': b'  118 |     float current_enc_val[enc_per_joint_*\x1b[01;31m\x1b[Klinked_joints_\x1b[m\x1b[K]={0};\n'}
+[2.425223] (nodes_pkg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.425546] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.425802] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.425960] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.426115] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:119:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::enc_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.426284] (nodes_pkg) StderrLine: {'line': b'  119 |     float last_enc_val[\x1b[01;31m\x1b[Kenc_per_joint_\x1b[m\x1b[K*linked_joints_]={0};\n'}
+[2.426542] (nodes_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.426765] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.426930] (nodes_pkg) StderrLine: {'line': b'  113 |     int  \x1b[01;36m\x1b[Kenc_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.427096] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.427251] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:119:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.427408] (nodes_pkg) StderrLine: {'line': b'  119 |     float last_enc_val[enc_per_joint_*\x1b[01;31m\x1b[Klinked_joints_\x1b[m\x1b[K]={0};\n'}
+[2.427562] (nodes_pkg) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.427836] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.427997] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.428151] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.428304] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::strings_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.428458] (nodes_pkg) StderrLine: {'line': b'  120 |     float current_tension_val[\x1b[01;31m\x1b[Kstrings_per_joint_\x1b[m\x1b[K*(linked_joints_+1)]={0}; // adding 1 for now need to be corrected\n'}
+[2.428613] (nodes_pkg) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.428805] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.428961] (nodes_pkg) StderrLine: {'line': b'  115 |     int  \x1b[01;36m\x1b[Kstrings_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.429114] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.429280] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.429443] (nodes_pkg) StderrLine: {'line': b'  120 |     float current_tension_val[strings_per_joint_*(\x1b[01;31m\x1b[Klinked_joints_\x1b[m\x1b[K+1)]={0}; // adding 1 for now need to be corrected\n'}
+[2.429605] (nodes_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.429859] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.430016] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.430169] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.430320] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:121:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::strings_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.430474] (nodes_pkg) StderrLine: {'line': b'  121 |     float last_tension_val[\x1b[01;31m\x1b[Kstrings_per_joint_\x1b[m\x1b[K*(linked_joints_+1)]={0};// adding 1 for now need to be corrected\n'}
+[2.430674] (nodes_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.430879] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.431035] (nodes_pkg) StderrLine: {'line': b'  115 |     int  \x1b[01;36m\x1b[Kstrings_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.431189] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.431343] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:121:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.431563] (nodes_pkg) StderrLine: {'line': b'  121 |     float last_tension_val[strings_per_joint_*(\x1b[01;31m\x1b[Klinked_joints_\x1b[m\x1b[K+1)]={0};// adding 1 for now need to be corrected\n'}
+[2.431845] (nodes_pkg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.432014] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.432178] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.432347] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.432506] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:122:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::strings_per_joint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.432691] (nodes_pkg) StderrLine: {'line': b'  122 |     float motor_cmd_val[\x1b[01;31m\x1b[Kstrings_per_joint_\x1b[m\x1b[K*(linked_joints_+1)]={0};// adding 1 for now need to be corrected\n'}
+[2.432856] (nodes_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.433010] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.433161] (nodes_pkg) StderrLine: {'line': b'  115 |     int  \x1b[01;36m\x1b[Kstrings_per_joint_\x1b[m\x1b[K=10;\n'}
+[2.433334] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.433487] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:122:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KNode1::linked_joints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.433696] (nodes_pkg) StderrLine: {'line': b'  122 |     float motor_cmd_val[strings_per_joint_*(\x1b[01;31m\x1b[Klinked_joints_\x1b[m\x1b[K+1)]={0};// adding 1 for now need to be corrected\n'}
+[2.433906] (nodes_pkg) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.434181] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.434343] (nodes_pkg) StderrLine: {'line': b'  114 |     int  \x1b[01;36m\x1b[Klinked_joints_\x1b[m\x1b[K=10;\n'}
+[2.434497] (nodes_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.448814] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Node1::joint_val_callback(std_msgs::msg::Float32MultiArray)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.450089] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:47:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_enc_val\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.450715] (nodes_pkg) StderrLine: {'line': b'   47 |         \x1b[01;31m\x1b[Kcurrent_enc_val\x1b[m\x1b[K[i]=msg.data[i];\n'}
+[2.450942] (nodes_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.457198] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Node1::joint_cmd_callback(std_msgs::msg::Float32MultiArray)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.457555] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:54:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_cmd_val\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kjoint_cmd_callback\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.457935] (nodes_pkg) StderrLine: {'line': b'   54 |         \x1b[01;31m\x1b[Kjoint_cmd_val\x1b[m\x1b[K[i]=msg.data[i];\n'}
+[2.458197] (nodes_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.458370] (nodes_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kjoint_cmd_callback\x1b[m\x1b[K\n'}
+[2.465888] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Node1::tension_val_callback(std_msgs::msg::Float32MultiArray)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.466161] (nodes_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:78:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_tension_val\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.466331] (nodes_pkg) StderrLine: {'line': b'   78 |         \x1b[01;31m\x1b[Kcurrent_tension_val\x1b[m\x1b[K[i]=msg.data[i];\n'}
+[2.466486] (nodes_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.508629] (-) TimerEvent: {}
+[2.609175] (-) TimerEvent: {}
+[2.709647] (-) TimerEvent: {}
+[2.810217] (-) TimerEvent: {}
+[2.910622] (-) TimerEvent: {}
+[3.010979] (-) TimerEvent: {}
+[3.111329] (-) TimerEvent: {}
+[3.211669] (-) TimerEvent: {}
+[3.312123] (-) TimerEvent: {}
+[3.412572] (-) TimerEvent: {}
+[3.513322] (-) TimerEvent: {}
+[3.613929] (-) TimerEvent: {}
+[3.715283] (-) TimerEvent: {}
+[3.816434] (-) TimerEvent: {}
+[3.916990] (-) TimerEvent: {}
+[4.017529] (-) TimerEvent: {}
+[4.125354] (-) TimerEvent: {}
+[4.225840] (-) TimerEvent: {}
+[4.326181] (-) TimerEvent: {}
+[4.426566] (-) TimerEvent: {}
+[4.526940] (-) TimerEvent: {}
+[4.627250] (-) TimerEvent: {}
+[4.727631] (-) TimerEvent: {}
+[4.827997] (-) TimerEvent: {}
+[4.928337] (-) TimerEvent: {}
+[5.028721] (-) TimerEvent: {}
+[5.129092] (-) TimerEvent: {}
+[5.229495] (-) TimerEvent: {}
+[5.257277] (nodes_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1\n'}
+[5.257516] (nodes_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2\n'}
+[5.257687] (nodes_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.259915] (nodes_pkg) CommandEnded: {'returncode': 2}
+[5.319247] (nodes_pkg) JobEnded: {'identifier': 'nodes_pkg', 'rc': 2}
+[5.329660] (-) TimerEvent: {}
+[5.329988] (-) EventReactorShutdown: {}

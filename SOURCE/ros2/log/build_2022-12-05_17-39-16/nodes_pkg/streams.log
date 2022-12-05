@@ -1,0 +1,28 @@
+[0.019s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.082s] [ 50%] Built target node2
+[0.091s] [ 75%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[8.434s] [100%] [32m[1mLinking CXX executable node1[0m
+[8.798s] [100%] Built target node1
+[8.810s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[8.867s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg
+[8.875s] -- Install configuration: ""
+[8.876s] -- Installing: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/nodes_pkg/node1
+[8.884s] -- Set runtime path of "/home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/nodes_pkg/node1" to ""
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/lib/nodes_pkg/node2
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/ament_index/resource_index/package_run_dependencies/nodes_pkg
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/ament_index/resource_index/parent_prefix_path/nodes_pkg
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/ament_prefix_path.sh
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/ament_prefix_path.dsv
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/path.sh
+[8.884s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/environment/path.dsv
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.bash
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.sh
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.zsh
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/local_setup.dsv
+[8.885s] -- Installing: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.dsv
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/ament_index/resource_index/packages/nodes_pkg
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/cmake/nodes_pkgConfig.cmake
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/cmake/nodes_pkgConfig-version.cmake
+[8.885s] -- Up-to-date: /home/ben/SNAKE/SOURCE/ros2/install/nodes_pkg/share/nodes_pkg/package.xml
+[8.889s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg

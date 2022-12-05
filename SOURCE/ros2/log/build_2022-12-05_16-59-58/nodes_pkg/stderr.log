@@ -1,0 +1,33 @@
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:22:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint linked_joints_[m[K’
+   22 |     int controller_freq_,[01;31m[Klinked_joints_[m[K,strings_per_joint_,max_pwm_,enc_z_,enc_y_;
+      |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:20:10:[m[K [01;36m[Knote: [m[K‘[01m[Kint linked_joints_[m[K’ previously defined here
+   20 |     int  [01;36m[Klinked_joints_[m[K=1;
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:22:41:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint strings_per_joint_[m[K’
+   22 |     int controller_freq_,linked_joints_,[01;31m[Kstrings_per_joint_[m[K,max_pwm_,enc_z_,enc_y_;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:21:10:[m[K [01;36m[Knote: [m[K‘[01m[Kint strings_per_joint_[m[K’ previously defined here
+   21 |     int  [01;36m[Kstrings_per_joint_[m[K=1;
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:119:39:[m[K [01;31m[Kerror: [m[Ksize of array ‘[01m[Kjoint_cmd_val[m[K’ is not an integral constant-expression
+  119 |     float joint_cmd_val[[01;31m[Kenc_per_joint_*linked_joints_[m[K]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string
+      |                         [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:41:[m[K [01;31m[Kerror: [m[Ksize of array ‘[01m[Kcurrent_enc_val[m[K’ is not an integral constant-expression
+  120 |     float current_enc_val[[01;31m[Kenc_per_joint_*linked_joints_[m[K]={0};
+      |                           [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:121:38:[m[K [01;31m[Kerror: [m[Ksize of array ‘[01m[Klast_enc_val[m[K’ is not an integral constant-expression
+  121 |     float last_enc_val[[01;31m[Kenc_per_joint_*linked_joints_[m[K]={0};
+      |                        [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:122:49:[m[K [01;31m[Kerror: [m[Ksize of array ‘[01m[Kcurrent_tension_val[m[K’ is not an integral constant-expression
+  122 |     float current_tension_val[[01;31m[Kstrings_per_joint_*(linked_joints_+1)[m[K]={0}; // adding 1 for now need to be corrected
+      |                               [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:123:46:[m[K [01;31m[Kerror: [m[Ksize of array ‘[01m[Klast_tension_val[m[K’ is not an integral constant-expression
+  123 |     float last_tension_val[[01;31m[Kstrings_per_joint_*(linked_joints_+1)[m[K]={0};// adding 1 for now need to be corrected
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:124:43:[m[K [01;31m[Kerror: [m[Ksize of array ‘[01m[Kmotor_cmd_val[m[K’ is not an integral constant-expression
+  124 |     float motor_cmd_val[[01;31m[Kstrings_per_joint_*(linked_joints_+1)[m[K]={0};// adding 1 for now need to be corrected
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

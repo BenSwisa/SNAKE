@@ -1,0 +1,105 @@
+[0.016s] Invoking command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target node1[0m
+[0.082s] [ 50%] Built target node2
+[0.101s] [ 75%] [32mBuilding CXX object CMakeFiles/node1.dir/src/node1.cpp.o[0m
+[2.422s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:116:40:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Node1::linked_joints_[m[K’
+[2.422s]   116 |     int controller_freq_,linked_joints_[01;31m[K,[m[Kstrings_per_joint_,max_pwm_,enc_z_,enc_y_;
+[2.422s]       |                                        [01;31m[K^[m[K
+[2.422s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Node1::linked_joints_[m[K’
+[2.422s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.422s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.422s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:116:59:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Node1::strings_per_joint_[m[K’
+[2.422s]   116 |     int controller_freq_,linked_joints_,strings_per_joint_[01;31m[K,[m[Kmax_pwm_,enc_z_,enc_y_;
+[2.423s]       |                                                           [01;31m[K^[m[K
+[2.423s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Node1::strings_per_joint_[m[K’
+[2.423s]   115 |     int  [01;36m[Kstrings_per_joint_[m[K=10;
+[2.423s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.423s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:117:25:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::enc_per_joint_[m[K’
+[2.423s]   117 |     float joint_cmd_val[[01;31m[Kenc_per_joint_[m[K*linked_joints_]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string
+[2.423s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.423s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.423s]   113 |     int  [01;36m[Kenc_per_joint_[m[K=10;
+[2.423s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.424s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:117:40:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::linked_joints_[m[K’
+[2.424s]   117 |     float joint_cmd_val[enc_per_joint_*[01;31m[Klinked_joints_[m[K]={0}; // [joint*enc_linked] ******* positive val in the direction of pulling the string
+[2.424s]       |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.424s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.424s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.424s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.424s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:118:27:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::enc_per_joint_[m[K’
+[2.424s]   118 |     float current_enc_val[[01;31m[Kenc_per_joint_[m[K*linked_joints_]={0};
+[2.424s]       |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.424s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.424s]   113 |     int  [01;36m[Kenc_per_joint_[m[K=10;
+[2.424s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.424s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:118:42:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::linked_joints_[m[K’
+[2.424s]   118 |     float current_enc_val[enc_per_joint_*[01;31m[Klinked_joints_[m[K]={0};
+[2.425s]       |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.425s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.425s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.425s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.425s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:119:24:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::enc_per_joint_[m[K’
+[2.426s]   119 |     float last_enc_val[[01;31m[Kenc_per_joint_[m[K*linked_joints_]={0};
+[2.426s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.426s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:113:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.426s]   113 |     int  [01;36m[Kenc_per_joint_[m[K=10;
+[2.426s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.427s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:119:39:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::linked_joints_[m[K’
+[2.427s]   119 |     float last_enc_val[enc_per_joint_*[01;31m[Klinked_joints_[m[K]={0};
+[2.427s]       |                                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.427s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.427s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.427s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.428s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:31:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::strings_per_joint_[m[K’
+[2.428s]   120 |     float current_tension_val[[01;31m[Kstrings_per_joint_[m[K*(linked_joints_+1)]={0}; // adding 1 for now need to be corrected
+[2.428s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.428s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.428s]   115 |     int  [01;36m[Kstrings_per_joint_[m[K=10;
+[2.428s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.429s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:120:51:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::linked_joints_[m[K’
+[2.429s]   120 |     float current_tension_val[strings_per_joint_*([01;31m[Klinked_joints_[m[K+1)]={0}; // adding 1 for now need to be corrected
+[2.429s]       |                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.429s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.429s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.429s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.430s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:121:28:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::strings_per_joint_[m[K’
+[2.430s]   121 |     float last_tension_val[[01;31m[Kstrings_per_joint_[m[K*(linked_joints_+1)]={0};// adding 1 for now need to be corrected
+[2.430s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.430s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.430s]   115 |     int  [01;36m[Kstrings_per_joint_[m[K=10;
+[2.430s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.431s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:121:48:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::linked_joints_[m[K’
+[2.431s]   121 |     float last_tension_val[strings_per_joint_*([01;31m[Klinked_joints_[m[K+1)]={0};// adding 1 for now need to be corrected
+[2.431s]       |                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.431s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.431s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.432s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.432s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:122:25:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::strings_per_joint_[m[K’
+[2.432s]   122 |     float motor_cmd_val[[01;31m[Kstrings_per_joint_[m[K*(linked_joints_+1)]={0};// adding 1 for now need to be corrected
+[2.432s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.432s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:115:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.432s]   115 |     int  [01;36m[Kstrings_per_joint_[m[K=10;
+[2.433s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.433s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:122:45:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KNode1::linked_joints_[m[K’
+[2.433s]   122 |     float motor_cmd_val[strings_per_joint_*([01;31m[Klinked_joints_[m[K+1)]={0};// adding 1 for now need to be corrected
+[2.433s]       |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.433s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:114:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.434s]   114 |     int  [01;36m[Klinked_joints_[m[K=10;
+[2.436s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.449s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::joint_val_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[2.449s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:47:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_enc_val[m[K’ was not declared in this scope
+[2.450s]    47 |         [01;31m[Kcurrent_enc_val[m[K[i]=msg.data[i];
+[2.450s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.457s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::joint_cmd_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[2.457s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_val[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint_cmd_callback[m[K’?
+[2.457s]    54 |         [01;31m[Kjoint_cmd_val[m[K[i]=msg.data[i];
+[2.457s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.458s]       |         [32m[Kjoint_cmd_callback[m[K
+[2.465s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:[m[K In member function ‘[01m[Kvoid Node1::tension_val_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[2.465s] [01m[K/home/ben/SNAKE/SOURCE/ros2/src/nodes_pkg/src/node1.cpp:78:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_tension_val[m[K’ was not declared in this scope
+[2.466s]    78 |         [01;31m[Kcurrent_tension_val[m[K[i]=msg.data[i];
+[2.466s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.257s] gmake[2]: *** [CMakeFiles/node1.dir/build.make:76: CMakeFiles/node1.dir/src/node1.cpp.o] Error 1
+[5.257s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/node1.dir/all] Error 2
+[5.257s] gmake: *** [Makefile:146: all] Error 2
+[5.259s] Invoked command in '/home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ben/SNAKE/SOURCE/ros2/build/nodes_pkg -- -j3 -l3
